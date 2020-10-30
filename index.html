@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS code</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main id="root" class="root-container">
+      <button id="close">&times;</button>
+      
+      <section id="start">
+        <h1>Random number game</h1>
+        <span>Suggest a number from 1 to 100</span>
+        <div class="button-holder">
+          <button id="start-button">Let's go</button>
+        </div>
+      </section>
+        <section id="game" class="hidden">
+        <span class="intro">Please suggest a number in range from 1 to 100</span>
+        
+        <div class="form-holder">
+          <span class="more string">More than <span id="more">0</span></span>
+          <form action="#" id="form">
+            <select></select>
+            <!--<input type="number" />-->
+            <input type="submit" value="Suggest" />
+          </form>
+          <span class="less string">Less than <span id="less">101</span></span>
+        </div>
+        <span class="moves">Moves: <span id="moves">0</span></span>
+        </section>
+      <section id="final" class="hidden">
+        <h2 class="congrats">Congratulations! The right answer is <span></span></h2>
+        <span>You finished the game in <span class="moves"></span> moves</span>
+        <div class="button-holder">
+           <!--<button type="submit"  onClick="refreshPage()">Restart game</button>-->
+          <button id="restart-button">Restart game</button>
+        </div>
+      </section>
+      <div id="myoverlay" class="overlay"></div>
+      <div class="popup">
+        <div class="closeGame">Close the game?</div>
+        <div class="buttons"><button id="closePopup">YES</button><button id="continueGame">NO</button></div>
+        
+      </div>
+      
+    </main>
+    <script src="js/js2.js"></script>
+  </body>
+</html>

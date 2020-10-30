@@ -1,0 +1,105 @@
+body{
+    margin: 0%;
+}
+
+.root-container{
+    position: relative;
+    background-color:#fff200;
+    width: 500px;
+    padding: 15px;
+    font-family:Lucida Console,
+    Courier,
+    monospace;
+    font-style: normal;
+    text-align: center;
+    margin: auto;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    border: 2px solid grey;
+}
+
+form{
+    margin: 10px;  
+}
+
+.intro {
+    margin: auto;
+}
+
+.result .string{
+    display: block;
+}
+
+.result .string span {
+    margin-right: 7px;
+}
+
+.congrats {
+    font-size: 25px;
+}
+
+.congrats span {
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    margin: auto;
+    margin-top: 15px;
+    display: block;
+    cursor: pointer;
+}
+
+#game {
+    display: none;
+}
+.popup {
+    position: absolute;
+    display: none;
+    width: 50%;
+    height: 50%;
+    background: #fff200;
+    top: 25%;
+    left: 25%;
+    border-radius: 6px;
+    text-align: center;
+    opacity: none;
+    filter: drop-shadow(0 0 2px #000000);
+    -webkit-filter:drop-shadow(0 0 2px #000000);
+}
+
+.overlay {
+   position: absolute;
+   display: none;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   background: #acacac;
+   opacity: 0.5;
+filter: blur(1px);
+}
+
+#close {
+    position: relative;
+    display: block;
+    margin-top: -12px;
+    margin-left: -12px;
+    cursor: pointer;
+}
+
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 50%;
+    margin:auto;
+
+}
+.closeGame{
+    margin-top: 15px;
+}
